@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selector</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="style.js"></script>
+</head>
+<body>
+	<DIV>
+		<h1>TRY TO REPLICATE THIS PAGE USING INTERNAL CSS</h1>
+	</DIV  class=>
+
+</body>
+</html>

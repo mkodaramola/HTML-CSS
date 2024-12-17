@@ -1,0 +1,103 @@
+.d1 {
+	background-color: red;
+	height: 20px;
+	margin-top: 0px;
+}
+.tel{
+	font-size: 10px;
+	color: #FFF;
+	margin-top: 0px;
+	
+	margin-left: 20%
+
+}
+
+.ico{
+	height: 11px;
+	width: 11px;
+	}
+#fb{
+	margin-top: 2px;
+	padding-left: 20px;
+	}
+
+	#in{
+	padding-left: 20px;
+	}
+
+	#yt{
+	padding-left: 20px;
+	}
+
+.optBar{
+	background: #FFF;
+	padding-top: 0px;
+	margin-left: 0px;
+}
+
+.menuBar{
+	background: #FFF;
+	display: inline-block;
+	font-size: 40px;
+	color: red;
+}
+
+
+.menuBar:hover{
+	background: #FFF;
+	color: red;
+}
+
+
+
+.mbars{
+	background: white;
+	margin-top: 4px;
+	width: 15px;
+	height: 0.1px;
+	border: 1px solid white;
+	border-radius: 50px;
+
+}
+
+
+.menuBar:hover .mbars{
+	border: 1px solid #4CAF50;
+}
+
+
+
+.oBars{
+	display: inline-block;
+	width: 50%;
+	background: #FFF;
+	color: red;
+	float: right;
+	margin-right: 20px;
+	padding-top: 0px;
+
+}
+
+.oBarsT{
+
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	font-size: 20px;
+	background: #FFF;
+	height: 55px;
+	padding-top: 20px;
+	padding-left: 3px;
+	padding-right: 2px;
+	transition: background 0.8s;
+
+}
+
+.oBarsT:hover{
+	background: #FFF;
+	color: red;
+}
+
+.oBarsT img{
+	width: 22px;
+}

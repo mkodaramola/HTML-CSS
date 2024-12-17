@@ -1,0 +1,54 @@
+
+
+/* .item1, .item2{
+    width: 150px;
+    height: 100px;
+}
+
+.item1{
+    background: #1CD;
+    position: relative;
+    left:0;
+    top:0;
+    
+}
+.item2{
+    background: #FA8;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+p{
+    height: 400vh;
+}
+
+.box{
+    border: 5px solid black;
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+ 
+     
+}
+
+.item1, .item2{
+    width: 150px;
+    height: 100px;
+}
+
+
+
+.item1{
+
+    background: #1CD;
+    position: sticky;
+    left: 52%;
+       
+   
+}
+.item2{
+    background: #FA8;
+   
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loader</title>
+    <style>
+        #image-box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #ccc;
+            display: block;
+            margin: 20px auto;
+        }
+        #url-input {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="url-input" placeholder="Enter image URL here" />
+    <img id="image-box" src="" alt="Image will load here" />
+
+    <script>
+        // Function to load image from the URL in the input box
+        function loadImage() {
+            const urlInput = document.getElementById("url-input").value;
+            const imageBox = document.getElementById("image-box");
+
+            // Check if URL is not empty
+            if (urlInput) {
+                imageBox.src = urlInput;
+            }
+        }
+
+        // Set interval to reload the image every 10 seconds
+        setInterval(loadImage, 10000);
+
+        // Update the text box based on 'new_url' query parameter in the URL
+        function updateTextBoxFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            const newUrl = params.get('new_url');
+
+            if (newUrl) {
+                document.getElementById("url-input").value = newUrl;
+                loadImage();  // Load image immediately after updating the URL
+            }
+        }
+
+        // Call the function to update the text box on page load
+        window.onload = updateTextBoxFromURL;
+
+        // Also load image immediately when URL is entered or changed
+        document.getElementById("url-input").addEventListener("change", loadImage);
+    </script>
+
+</body>
+</html>

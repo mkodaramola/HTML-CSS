@@ -1,0 +1,72 @@
+body{
+	background:#222;
+	color: #FFF;
+	
+}
+h1{
+	font-size: 50px;
+}
+.conF{
+	background: #454;
+	width: 40%;
+	height: 500px;
+	position: relative;
+	margin-top: 120px;
+	left: 30%;
+	border:1px solid #555;
+	border-radius: 10%; 
+
+}
+#img{
+	text-align: center;
+	margin-top: 0px;
+	left: 0%;
+}
+
+#upcon{
+	position: relative;
+	left: 15%;
+	margin-top: 40px;
+}
+img{
+	width: 70px;
+	height: 70px;
+}
+
+
+.con{
+	position: relative;
+	margin-top: 100px;
+	color: #FFF;
+	font-size: 25px;
+
+}
+
+.scon{
+	position: relative;
+	left: 2%;
+}
+#lgbut{
+	margin-top: 8%;
+	margin-left: 15%;
+}
+input[type=button]{
+	font-size: 15px;
+	background: #F99;
+	border-radius: 15%;
+	
+	transition: color 0.8s;
+	transition: font-size 0.8s;
+	
+	color: #EEE;
+}
+input[type=button]:hover{
+	box-shadow: 1px 5px 15px grey;
+	font-size: 17px;
+	cursor: pointer;
+	color: #DDD;	
+}
+
+#rform{
+	font-size: 30px;
+}

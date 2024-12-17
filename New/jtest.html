@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jtest</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+
+
+
+      $(document).ready(function(){
+
+     
+      $('input').on({
+
+      	focus: function(){
+      		$(this).css("background",'#F23');
+      	},
+
+      	blur: function(){
+      		$(this).css("background",'#2F3');
+      	},
+
+      	mouseover:function(){
+      		$(this).css("background",'#23F');
+      	}
+
+      });
+      $('p').on('click',function(){
+      		$('p').toggle(1000);
+      });
+
+       $('#but2').click(function(){
+      		$('p').show(1000);
+      		
+      });
+   
+      $('#but2').dblclick(function(){
+      		$('p').hide(1000)
+      		.show(1000)
+      		.fadeOut();
+      });
+
+      $('#but').click(function(){
+      	$('div').fadeTo(1000, 0.1);
+      });
+
+
+       $('#but3').click(function(){
+
+      	$('img').slideToggle();
+
+      });
+
+     $("#but3").click(function(){
+     	
+    $("div").animate({
+        left: '250px',
+        opacity: '0.5',
+        height: '150px',
+        width: '150px'
+    });
+
+});
+
+	
+
+
+
+    $("#btn1").click(function(){
+        alert("Text: " + $("#test").text());
+    });
+  
+$("#btn2").click(function(){
+    $("#test").html("Hello <b>world!</b>");
+});
+
+
+
+
+  });
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <p>
+	    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <input type="text" name="">
+
+  <button type="button" id="but2" name="button">but2</button>
+  <div>-
+  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <button type="button" id="but" name="button">but</button>
+  <br><br><br>
+  <div>
+  	<img src="t8.jpg" width="400px" height="200px">
+  </div>
+  <button type="button" id="but3" name="button">but3</button>
+<br><br>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button><br>
+<br>
+<p><a href="../index.html" id="w3s">W3Schools.com</a></p>
+
+
+
+  </body>
+</html>

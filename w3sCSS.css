@@ -1,0 +1,156 @@
+
+
+.logo{
+
+
+}
+
+.logo .l1{
+
+display: inline-block;
+font-size: 50px;
+
+}
+.logo .l2{
+	display: inline-block;
+	float: right;
+	padding-top: 27px;
+	font-family: monospace;
+	font-size: 19px;
+
+}
+
+.optBar{
+	background: #4CAF50;
+	padding-top: 0px;
+	margin-left: 0px;
+}
+
+.menuBar{
+	background: #4CAF50;
+	display: inline-block;
+	width: 20px;
+	height: 51px;
+	margin-left: 5px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+
+}
+
+
+.menuBar:hover{
+	background: #FFF;
+	color: #4CAF50;
+}
+
+
+
+.mbars{
+	background: white;
+	margin-top: 4px;
+	width: 15px;
+	height: 0.1px;
+	border: 1px solid white;
+	border-radius: 50px;
+
+}
+
+
+.menuBar:hover .mbars{
+	border: 1px solid #4CAF50;
+}
+
+
+
+.oBars{
+	display: inline-block;
+	width: 50%;
+	background: #4CAF50;
+	color: white;
+	float: right;
+	margin-right: 20px;
+	padding-top: 0px;
+
+}
+
+.oBarsT{
+
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	font-size: 20px;
+	background: #4CAF50;
+	height: 55px;
+	padding-top: 20px;
+	padding-left: 3px;
+	padding-right: 2px;
+	transition: background 0.8s;
+
+}
+
+.oBarsT:hover{
+	background: #FFF;
+	color: #4CAF50;
+}
+
+.oBarsT img{
+	width: 22px;
+}
+
+
+@keyframes slide{
+	0%{
+		left: -50%
+		
+	}
+	100%{
+		left: 0%;
+		
+	}
+}
+
+
+.mframe {
+	
+	height: 500px;
+	width: 220px;
+	
+}
+
+.menu{
+	position: relative;
+	animation-name: slide;
+	animation-duration: 0.4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	float: left;
+}
+
+.leftc{
+	text-align: center;
+	float: left;
+	padding-top: 70px;
+	margin-left: 7%;
+	color: #444;
+	position: relative;
+}
+
+.rightc {
+	float: right;
+}
+.LH_HR{
+	display: inline-block;
+	border:1px solid #444;
+	margin-left: 15px;
+	background-color: #444;
+	color: #FFF;
+	padding: 15px;
+	transition: box-shadow 0.8s;
+
+}
+
+.LH_HR:hover{
+ box-shadow: 0px 13px 5px grey;
+}

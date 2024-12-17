@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Background</title>
+
+		<style type="text/css">
+		
+			button{
+				width: 80px;
+				height: 80px;
+				color: #FFF;
+				font-family: sans-serif;
+				font-size: 20px;
+				text-decoration: overline;
+				border:3px dotted gold;
+				border-radius: 50%;
+				margin-left: 20px;
+				box-shadow: rgb(0,0,0);
+
+
+			}
+
+			#red {
+				background-color: #F00;
+		
+				}
+
+			#green {
+				background-color: #0F0;
+				
+				
+			}
+
+			#blue{
+				background-color: #00F;
+			
+			}
+
+			#silver {
+				background-color:silver;
+		
+				}
+
+			#orange {
+				background-color: orange;
+				
+				
+			}
+
+			#purple{
+				background-color: purple;
+			
+			}
+
+			#brown {
+				background-color: brown;
+		
+				}
+
+			#cyan {
+				background-color: cyan;
+				
+				
+			}
+
+			#pink{
+				background-color: pink;
+			
+			}
+
+			#yellow {
+				background-color: yellow;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		
+
+		<select>
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="yellow">Yellow</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="brown">Brown</option>
+			<option value="pink">Pink</option>
+			<option value="purple">Purple</option>
+			<option value="cyan">Cyan</option>
+			<option value="silver">Silver</option>
+		</select><br><br>
+
+		<button id="red">Red</button>
+		<button id="green">Green</button>
+		<button id="blue">Blue</button>
+		<button id="yellow">Yellow</button>
+		<button id="brown">Brown</button>
+		<button id="pink">Pink</button>
+		<button id="purple">Purple</button>
+		<button id="cyan">Cyan</button>
+		<button id="silver">Silver</button>
+		<button id="orange">Orange</button>
+
+
+		<div class="marq">
+			<marquee direction="left" ><h1>Can you Identify these colours</h1></marquee>
+		</div>
+<script type="text/javascript">
+				
+				document.querySelector('#red').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'red';
+				}
+				document.querySelector('#green').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'green';
+				}
+				document.querySelector('#blue').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'blue';
+				}
+
+				document.querySelector('#orange').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'orange';
+				}
+				document.querySelector('#silver').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'silver';
+				}
+				document.querySelector('#brown').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'brown';
+				}
+				document.querySelector('#pink').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'pink';
+				}
+				document.querySelector('#purple').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'purple';
+				}
+				document.querySelector('#cyan').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'cyan';
+				}
+				document.querySelector('#yellow').onclick = function(){
+					document.querySelector('body').style.backgroundColor = 'yellow';
+				}
+				
+
+		</script>
+
+	</body>
+</html>

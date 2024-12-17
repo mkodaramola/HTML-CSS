@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+
+	<style type="text/css">
+		
+		body{
+			background: url(t3.gif);
+
+		}
+
+		@keyframes grow{
+			from {
+				font-size: 20px;
+				transform: rotateY(0);
+			}
+			to{
+				font-size: 100px;
+				transform: rotateY(360deg);
+				
+			}
+		}
+
+		h1{
+			position: relative;
+			top: 20%;
+			animation-name: grow;
+			animation-duration: 10s;
+			animation-iteration-count: 3;
+			animation-fill-mode: forwards;
+			color: #C6F;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+	<h1>Money Spraying Helicopter</h1>
+
+</body>
+</html>

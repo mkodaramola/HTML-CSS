@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascript program</title>
+	<script type="text/javascript">
+
+
+		var name = prompt("what is your name?", "");
+
+		document.write("<p> Goodluck to you " + name + "</p>")
+		
+
+		var fn= 'John';
+		var sn= 'Hacker';
+		var ffn= fn +' '+ sn;
+		document.write(ffn);
+
+
+
+
+		var x=5;
+		var y=7;
+		document.write('<h1>Hello world!</h1>');
+		document.write(x+y + ' ');
+		document.write('<p>');
+		document.write('You have visited this page ' + x + ' times');
+		document.write('</p>')
+	
+
+		var frds = ['Goody', 'Shalom', 'Praise', 'Davies' ];
+
+		document.write(frds[frds.length-4] + ' are surfing.');
+
+		function money(a,b){
+			a= prompt("a is equal to: ", "");
+
+			b=prompt("b is equal to: ", "");
+			x=a*b;
+			return x;
+		}
+		product=money(a,b);
+
+		function meg(){
+			document.write("The number is " + product);
+			
+		}
+
+	</script>
+
+</head>
+<body>
+
+<form>
+	<input type="button" name="hello" value="Click me" onclick="money()">
+</form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DaraBrowse</title>
+	<script type="text/javascript">
+	var count = 5;
+	var text = "Element below 1";
+	var text1 = "Element now below -5";
+	var text2 = "Element already below -10"
+	function countd(){
+
+		document.getElementById("txt").innerHTML = count;
+		count--;
+		if (count < 1){
+			document.getElementById("txt1").style.background= "url(aa.jpg)";
+			
+		}
+		if (count < -5){
+			document.getElementById("txt1").style.background="url(bible.jpg)";
+			
+		}
+			if (count < -10){
+				document.getElementById("txt1").style.background="url(gb.jpg)";
+			
+		}		
+	}
+	var time = setInterval(countd, 1000);
+
+
+
+</script>
+<style type="text/css">
+	h1{
+		color: transparent;
+	}
+</style>
+</head>
+<body id="txt1">
+
+
+
+<h1 id="txt"></h1>
+<br><br><br>
+
+</body>
+</html>

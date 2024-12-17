@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+</head>
+<body style="text-align: left; background: url(c.jpg);" link="C:\Users\DSAT\Documents\JavascriptProgrammes\tut1">
+
+	
+<table align="center" style="color: white; background: url(blue.jpg ); margin-top: 0px;" border="1">
+	
+	
+	<tr>
+		<td>
+			<form>
+				<script type="text/javascript">		
+	function Cond(){
+			
+	}
+	function pos(){
+		confirm("Conditions 1. Student must abide with the school's rules and regulations<br>2. Students are not allowed to make use of cell phone or any electronic gadget<br>3. Use of earpiece is prohibited<br><br> <b>Do you agree with the terms and conditions above before we proceed?</b><br> Click Confirm if Yes!");	
+		var name = document.getElementById("name").value;
+		document.getElementById("name1").innerHTML = name;
+		var age = document.getElementById('age').value;
+		document.getElementById('age1').innerHTML = age;
+		var clas = document.getElementById('class').value;
+		document.getElementById('class1').innerHTML = clas;
+		var geno = document.getElementById('geno').value;
+		document.getElementById('geno1').innerHTML = geno;
+		var dob = document.getElementById('dob').value;
+		document.getElementById('dob1').innerHTML = dob;
+		var rel = document.getElementById('rel').value;
+		document.getElementById('rel1').innerHTML = rel;
+		var add = document.getElementById('address').value;
+		document.getElementById('address1').innerHTML = add;
+		var state = document.getElementById('state').value;
+		document.getElementById('state1').innerHTML = state;
+		var tel = document.getElementById('tel').value;
+		document.getElementById('tel1').innerHTML = tel;
+		var email = document.getElementById('email').value;
+		document.getElementById('email1').innerHTML = email;
+		var bg = document.getElementById('bg').value;
+		document.getElementById('bg1').innerHTML = bg;
+
+	}
+
+	</script>
+				<img src="ex.png" width="800px" height="250px">
+				<h1 align="center"><u>EXPERT EDUCATION CENTRE</u></h1>
+				<label><font color="white"><b>Name: </b></font></label>
+				<input type="text" id="name" size="45px">
+				 <br><br>
+
+				<label><font color="white"><b>Age: </b></font></label>
+				<input type="number" id="age" size="20px"><br><br>
+
+				<label><font color="white"><b>Class: </b></font></label>
+				<input type="text" id="class" size="30px">
+				<label><font color="white"><b> Genotype: </b></font></label>
+				<input type="text" id="geno" size="30px"><br><br>
+
+				<label><font color="white"><b>Date of birth: </b></font></label>
+				<input type="date" id="dob" size="30px"><br><br>
+
+				<label><font color="white"><b>Sex: </b></font></label>
+				<input type="radio" id="sex" name="sex">Male <input type="radio" name="sex"> Female
+				<label><font color="white"><b><br><br>
+
+				Religion: </b></font></label>
+				<select name="Religion" id="rel">
+					<option selected>Christianity</option>
+					<option>Islamic</option>
+					<option>Traditional</option>
+					<option>Other...</option>
+					
+				</select><br><br>
+
+				<label><font color="white"><b>State of Origin: </b></font></label>
+				<input type="text" id="state" name="name" size="45px"><br><br>
+				<b>Address: </b><br>
+				<textarea name="address" id="address" rows="5" cols="50">
+					
+				</textarea><br><br>
+
+				<label><font color="white" ><b>Tel number: </b></font></label>
+				<input type="tel" name="telno" id="tel" size="45px"><br><br>
+
+				<label><font color="white" ><b>E-mail Address: </b></font></label>
+				<input type="email" name="email" id="email" size="45px"><br><br>
+
+				<label><font color="white" ><b>Blood Group: </b></font></label>
+				<input type="Name" name="name" id="bg" size="45px"><br><br>
+
+				<label><font color="white"><b>Have you ever registered with Expert Education Centre/attended the tutorial before? </b></font></label><br>
+				<input type="checkbox" name="yes"> Yes! <input type="checkbox" name="no"> No!
+				<br><br>
+
+				<pre>												<input type="button" name="sub" value="Submit details" onclick="pos()"></pre>
+
+
+
+				
+			</form>
+
+
+		</td>
+		<td style=" margin-bottom: 1000px; width: 100%;">
+			<style type="text/css">
+				span{
+					 color: white;
+				}
+			</style>
+			<img src="ex.png" width="800px" height="250px">
+				<h1 align="center"><u>EXPERT EDUCATION CENTRE</u></h1>
+		
+			<b>Name:</b> <span id="name1"></span><br><br>
+		<b>Age:</b> <span id="age1"></span><br><br>
+		<b>Class:</b> <span id="class1"></span><br><br>
+		<b>Genotype:</b> <span id="geno1"></span><br><br>
+		<b>Date of Birth:</b> <span id="dob1"></span><br><br>
+		<b>Sex:</b> <span id="sex1"></span><br><br>
+		<b>Religion:</b> <span id="rel1"></span><br><br>
+		<b>Address:</b> <span id="address1"></span><br><br>
+		<b>State of Origin:</b> <span id="state1"></span><br><br>
+		<b>Tel number:</b> <span id="tel1"></span><br><br>
+		<b>E-mail:</b> <span id="email1"></span><br><br>
+		<b>Blood Group:</b> <span id="bg1"></span><br><br>	
+		</td>		
+	</tr>
+
+</table>
+
+</body>
+</html>

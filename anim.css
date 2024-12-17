@@ -1,0 +1,168 @@
+
+@keyframes slide{
+	from{
+		left: 10%;
+	}
+	50%{
+		left: 150%
+	}
+	
+	to{
+		left: 10%;
+	}
+
+}
+
+#header{
+	font-family: monospace;
+	font-size: 70px;
+	color: #FFF;
+	background: linear-gradient(to right,silver,#FFF);
+}
+
+.navBar{
+	list-style-type: none;
+	margin-left: 2px;
+	padding-left: 0px;
+	margin-top: 0px;
+
+
+
+}
+.navBar li{
+
+	display: block;
+	background-color: #3D3;
+	padding: 10px;
+	width: 30px;
+	transition: width 0.8s;
+
+	
+
+}
+.navBar li:hover{
+	background: linear-gradient(to right,green,lightgreen);
+	width: 80%;	
+
+}
+.nb {
+	width: 130px;
+	border-bottom: 1px solid black;
+
+}
+
+
+
+.cp{
+	top: 60%;
+	left: 60%; 
+	background-color: #FFF;
+	margin-left: 10px;
+	border:2px solid white;
+	position: relative;
+	float: left;
+	color: white;
+	border-radius: 20px;
+	height: 10px;
+	width: 10px;
+}
+
+#d1{
+	width: 80%;
+	height: 540px;
+	text-align: center;
+	margin-left: 0%;	
+	background-size: 100%;
+	color: #F0F;
+	font-family: cursive;
+	font-size: 50px;
+	padding-right: 10%;
+	margin-bottom: 0px;
+}
+
+
+
+#d2{
+	
+	background: linear-gradient(to right,#AB4,#F0F,#FFF);
+	font-size: 20px;
+	width: 0px;
+	height: 25px;
+	transition: width 1s;
+	margin-bottom: 60px;
+	
+
+
+}
+#d2:hover {
+	width: 700px;
+	color: black;
+}
+
+#img{
+	width: 70%;
+	height: 540px;
+	top: 10%;
+	left: 30%;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 20%;
+	background-size: 100%;
+	color: #FFF;
+	font-family: cursive;
+	font-size: 50px;
+	animation-name: slide;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	position: absolute;
+	z-index: -1;
+	animation-iteration-count: 2;
+	box-shadow: 5px 5px 10px #333;
+
+
+}
+
+.dh{
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	height: 50em;
+	border:0;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+#d3{
+	background-color: #3D3;
+	width: 10%;
+	padding: 1px;
+	color: white;
+
+}
+
+#d4 {
+	background-color: yellow;
+	width: 50%;
+	padding: 10px;
+}
+
+#d5 {
+	background-color: red;
+	width: 30%;
+	padding: 7px;
+}
+
+.ca:link, .ca:visited {
+	color: black;
+	text-decoration: none;
+}
+.ca:hover {
+	color: white;
+	text-decoration: none;
+
+}
+.ca:active {
+	color: green;
+	text-decoration: none;
+
+}

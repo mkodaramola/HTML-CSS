@@ -1,0 +1,90 @@
+body{
+	background-color: rgba(255,255,0);
+}
+@media print {
+	#lan{
+		display: none;
+	}
+}
+.header {
+	background-image: url("bg.jpg");
+	color: #FFF;
+	height: 100px;
+	text-decoration: underline;
+	margin: 0;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 10%;
+	height: 90px;
+	border-radius: 45%;
+	border:3px solid black;
+	cursor: pointer;
+}
+
+li, a, button{
+
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 450;
+	display: flex;
+	align-items: center;
+/*	justify-content: flex-end;
+*/	
+justify-content:space-between;
+
+}
+.first{
+color: #FFF;
+	font-size: 20px;
+	font-weight: 450;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+
+}
+.nav_links{
+	list-style: none;
+}
+.nav_links li {
+	display: inline-block;
+	padding-bottom: 0px 20px;
+	margin-left: 40px;
+	background-color: gray;
+	padding: 20px;
+
+}
+.nav_links li:hover {
+	color: gray; 
+	background-color: white;
+	padding: 20px;
+
+}
+.nav_links li a {
+	background: grey;
+	font-size: 20px;
+	transition: all 0.3s ease 0s;
+
+}
+button{
+	padding-bottom: 20px;
+	background: aqua;
+	transition: all 0.3s ease-in 0s;
+}
+
+button:hover{
+	font-size: 30px;
+	color: white;
+	border-radius: 50px;
+	box-shadow: 10px 5px grey;
+}
+.main table{
+	background-color: rgba(123,191,167,0.7);
+	text-align: center;
+	width: 100%;
+	justify-content: flex-end;
+
+}

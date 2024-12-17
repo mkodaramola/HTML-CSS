@@ -1,0 +1,48 @@
+<script type="text/javascript">
+
+
+	var price = 50;
+
+var input = prompt("Hello dear Customer, You are highly welcome. Pls what do you care for?", "");
+
+var num = prompt("Alright dear customer, " + input + " is sold for #50.00 each. How many "+ input + " do you want?" , "");
+
+var nprice = (num * price)
+
+var cash = prompt("Amount for " + num + " item(s) is #" + nprice + ". How much do you have with you?", "");
+
+
+function isPrime(integer){
+
+	for (var x = 2; x<integer;x++){
+		if (integer%x ===0){
+			document.write(integer+ " is divisible by " + );
+			return false;
+		}
+	}
+	return true;
+}
+
+var change = (cash - nprice);
+if (cash >= nprice){
+
+	var ans = prompt("Yh! You have enough money, you're good to buy. Wanna buy now?" , "");
+	
+	
+	
+	if(ans == 'yes' || ans == 'Yes' || ans == 'YES'){
+
+		alert("Purchased!!! You have #" + change + " left");
+
+
+	}
+		else 
+	alert("Ok! See you later.")
+}
+
+else
+alert("Sorry! You don't have enough money to purchase this item.");
+
+
+
+</script>

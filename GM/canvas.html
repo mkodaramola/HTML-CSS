@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+<style type="text/css">
+	
+	#myC {
+		border: 1px solid #0f9;
+		position: absolute;
+		left:10%;
+		top: 5%;
+	}
+	#but {
+		position: absolute;
+		top: 80%;
+		left: 30%;
+	
+	}
+
+	#lr{
+		display: inline-block;
+	
+
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+		<div><canvas id="myC" width="800" height="500">CNS</canvas></div>
+
+
+		<script type="text/javascript">
+		var wd = 100;
+		var hg = 10;
+		var x = 10;
+		var y = 30;		
+		var canvas = document.getElementById('myC');
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle = "red";
+		
+		function up(){
+
+			ctx.clearRect(x,y,wd,hg);
+
+			if(y <= 0){
+				y = 0;
+			}
+			else{
+				y-=10;
+			}
+			
+			ctx.fillRect(x,y,wd,hg);
+		}
+
+		function down(){
+
+			ctx.clearRect(x,y,wd,hg);
+
+			if(y >= 500){
+				y = 500;
+			}
+			else{
+				y+=10;
+			}
+			ctx.fillRect(x,y,wd,hg);
+
+		}
+
+		function left(){
+
+			ctx.clearRect(x,y,wd,hg);
+
+			if(x <= 0){
+				x = 0;
+			}
+			else{
+				x-=10;
+			}
+		
+			ctx.fillRect(x,y,wd,hg);
+		}
+
+		function right(){
+
+			ctx.clearRect(x,y,wd,hg);
+
+			if(x >= 800){
+				x = 800;
+			}
+			else{
+				x+=10;
+			}
+
+			
+			ctx.fillRect(x,y,wd,hg);
+		
+		}
+
+		
+		
+		</script>
+		<div id="but">
+
+			<div>
+				<button style="margin-left:35%;" onclick="up();" id="up" >Up</button>
+			</div>
+
+			<div id="lr">
+				<button id="left" onclick="left();" style="float:left; margin-top: 20px;">Left</button> <button id="right" onclick="right();" style="float:right; margin-left:20px; margin-top: 20px;">Right</button>
+			</div>
+			<div>
+				<button id="down" onclick="down();"   style="margin-left:25%; 	margin-top: 20px;">Down</button>
+			</div>
+
+		</div>
+
+
+</body>
+</html>

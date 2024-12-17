@@ -1,0 +1,35 @@
+body{
+	background:	url(t3.gif);
+	color: black;
+
+}
+
+img{
+	width: 120px;
+	height: 120px;
+}
+
+#title {
+	text-decoration: underline;
+	border-bottom: 1px solid black;
+	border-width: 20px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+table{
+	border: 1px solid white;	
+}
+
+.headers{
+	background:green;
+}
+.media {
+	background:blue;
+}
+.supply {
+	background:red;
+}
